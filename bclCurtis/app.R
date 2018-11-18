@@ -15,7 +15,9 @@ ui <- fluidPage(
                    choices = c("BEER", "REFRESHMENT", "SPIRITS", "WINE"),
                    selected = "WINE"),
       checkboxInput("sortInput", "Check to sort data by price.",
-                    value = FALSE)
+                    value = FALSE),
+      colourInput("colourInput", "Pick colour of plot.", value = "#4D4D4D",
+                  showColour = "background", palette = "limited")
     ),
     mainPanel(
       plotOutput("price_hist"),
@@ -25,8 +27,7 @@ ui <- fluidPage(
 )
 
 server <- function(input, output) {
-  observe(print(input$priceInput))
-  bcl_filtered <- reactive({
+  bcl_edited <- reactive({
     if (input$sortInput) {
       bcl %>% 
         filter(Price < input$priceInput[2],
@@ -41,12 +42,12 @@ server <- function(input, output) {
     }
   })
   output$price_hist <- renderPlot({
-    bcl_filtered() %>% 
+    bcl_edited() %>% 
       ggplot(aes(Price)) +
-      geom_histogram()
+      geom_histogram(fill = input$colourInput)
   })
   output$bcl_data <- DT::renderDataTable({
-    bcl_filtered()
+    bcl_edited()
   })
 }
 

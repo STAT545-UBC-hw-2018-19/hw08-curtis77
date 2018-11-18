@@ -7,7 +7,7 @@ This repository contains all files for this assignment. Please see link given be
 Features added to BCL App:
 * Can now sort data table by price
 * Used the DT package to make table interactive
-* 3rd feature
+* Allow colour of plot bars to be changed
 
 References:
 
