@@ -23,6 +23,7 @@ ui <- fluidPage(
       )
     ),
     mainPanel(
+      img(src = "Store.jpg"),
       plotOutput("price_hist"),
       DT::dataTableOutput("bcl_data")
     )
