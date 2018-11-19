@@ -15,7 +15,7 @@ References:
 
 My app is based on and uses code from the bcl app in lecture, linked here: [Link](https://github.com/vincenzocoia/STAT545_participation/blob/master/cm107/bcl/app.R)
 
-A link to the source for the image I used: [Link](http://hillsidecentre.com/wrdprss/wp-contenter/sabai/File/files/l_bf8bddca7d59221bbc1c1abfa1ce7779.jpg)
+A link to the source for the BC Liquor image I used: [Link](http://hillsidecentre.com/wrdprss/wp-contenter/sabai/File/files/l_bf8bddca7d59221bbc1c1abfa1ce7779.jpg)
 
 Links:
 
