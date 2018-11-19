@@ -7,7 +7,8 @@ This repository contains all files for this assignment. Please see link given be
 Features added to BCL App:
 * Can now sort data table by price
 * Used the DT package to make table interactive
-* Allow colour of plot bars to be changed
+* Allows user to specify sweetness if wine is selected, using a conditional panel
+* User can download their edited dataset
 
 References:
 
